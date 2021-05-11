@@ -1,0 +1,120 @@
+body {
+	font: 16px/28px arial, sans-serif;
+	background-color: #eaeaea;
+	color: #333;
+}
+
+.container {
+	width: 800px;
+	margin: auto;
+	background-color: #fff;
+}
+
+
+.header {
+	padding: 30px;
+	text-align: center;
+}
+
+.header .judul {
+	font: 40px 'BebasNeue', Monospace;
+	font-weight: bold;
+}
+
+.header ul li {
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 10px
+}
+
+.header a {
+	text-decoration: none;
+	color: salmon;
+}
+
+.header a:hover {
+	background-color: lightskyblue;
+	padding: 5px;
+}
+
+
+/*Navigasi*/
+
+/*Overlay*/
+.overlay {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0);
+	z-index: 9999;
+	transition: .8s;
+	text-align: center;
+	padding: 100px 0;
+
+}
+
+.overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,.7);
+}
+
+.overlay img {
+	max-height: 100%;
+}
+
+.overlay:target img {
+	animation: zoom 10s;
+}
+
+.over
+
+
+/*animasi*/
+@keyframes zoom
+0% {
+	transform scale(0);
+	opacity: 0;
+}
+100% {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.content p {
+	margin-bottom: 20px;
+	font-size: 14px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.content h2 {
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 24px;
+	color: #000;
+}
+
+.footer {
+	padding: 1px;
+	background-color: #333;
+}
+
+.footer .copy {
+	color: #eaeaea;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+
+/* Galery Foto */
+
+@font-face {
+	font-family: 'BebasNeue';
+	src: url(BebasNeue.woff) format('woff')
+}
